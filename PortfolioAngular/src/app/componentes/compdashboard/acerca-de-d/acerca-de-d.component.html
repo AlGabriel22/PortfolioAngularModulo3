@@ -1,0 +1,38 @@
+<section id="acerca-de-d" class="my-5">
+    <div class="container mask py-4 my-5 shadow rounded-2 text-white bg-gradient"
+        style="background-color: rgba(0, 0, 0, 0.8)">
+        <div class="row">
+            <div class="col">
+                <div class="titulo pt-3 ps-3 pb-1 text-warning">
+                    <h2 class="fw-bold border-bottom">Acerca de</h2>
+                </div>
+                <div class="col justify-content-center mx-3 py-1">
+                    <!--- boton de edicion acerca de--->
+                    <div class="d-grid gap-2 d-flex justify-content-end" id="btn-edit">
+                        <button
+                            class="btn btn-warning me-md-2 rounded-circle bg-transparent border border-2 border-warning bg-gradient"
+                            type="button" data-bs-toggle="modal" data-bs-target="#edicionAcercaDe"><span
+                                class="material-symbols-outlined text-warning py-1" style="font-size: 1rem;">
+                                edit
+                            </span></button>
+                        <button
+                            class="btn btn-warning rounded-circle bg-transparent border border-2 border-warning bg-gradient"
+                            type="button" data-bs-toggle="modal" data-bs-target="#borrarAcercaDe"><span
+                                class="material-symbols-outlined text-warning py-1" style="font-size: 1rem;">
+                                close
+                            </span></button>
+                    </div>
+                    <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sunt quis
+                        veniam optio
+                        obcaecati?
+                        Autem, esse consequatur perferendis iste fugiat reiciendis quo natus quidem, vel ab
+                        quaerat?
+                        Neque, aspernatur consectetur.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-acerca-de-modal></app-acerca-de-modal>
+    <app-borrar-acercade-modal></app-borrar-acercade-modal>
+</section>

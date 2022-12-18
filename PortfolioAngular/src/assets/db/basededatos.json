@@ -1,0 +1,209 @@
+{
+    "nombre": "Alvaro Gabriel",
+    "apellido": "Mamani",
+    "edad": 33,
+    "fecha_nacimiento": "18-05-1989",
+    "pais": "Argentina",
+    "ciudad": "San Miguel de Tucumán",
+    "ocupacion": "Full Stack Developer Jr.",
+    "imagen_background_header": "../assets/img/vecteezy.jpg",
+    "imagen_perfil": "../assets/img/imgprfl-200x200.jpg",
+    "acerca_de_mi": "Soy estudiante de programación, en busca de mi primera experiencia laboral en el sector IT, capacitado como desarrollador web full stack en el programa Argentina Programa.",
+    
+    "experiencia": [
+        {
+            "id": "1",
+            "nombre_empresa": "El Cristo Constructora",
+            "descripcion": "Ayudante de carpinteria",
+            "inicio": "2008",
+            "fin": "2012",
+            "logo": "../assets/img/imagen_color.png"
+        },
+        {
+            "id": "2",
+            "nombre_empresa": "Metropolitana Radio",
+            "descripcion": "Operador de sonido",
+            "inicio": "2012",
+            "fin": "2015",
+            "logo": "../assets/img/metro_400x400.jpg"
+        },
+        {
+            "id": "3",
+            "nombre_empresa": "Producción de eventos",
+            "descripcion": "DJ",
+            "inicio": "2013",
+            "fin": "2019",
+            "logo": "../assets/img/maglogo .png"
+        },
+        {
+            "id": "4",
+            "nombre_empresa": "Estetica",
+            "descripcion": "Peluquero",
+            "inicio": "2017",
+            "fin": "2023",
+            "logo": "../assets/img/peluquerialogo .png"
+        }
+    ],
+    "educacion": [
+        {
+            "id": "1",
+            "titulo": "Técnico Electromecanico con orientacion en bienes y servicios",
+            "institucion": "Escuela Tecnica n° 1, Prof. Rafael Marino",
+            "inicio": "2002",
+            "fin": "2007",
+            "imagen": "../assets/img/tec3.png"
+        },
+        {
+            "id": "2",
+            "titulo": "Operador de PC",
+            "institucion": "INI Computacion",
+            "inicio": "2008",
+            "fin": "2008",
+            "imagen": "../assets/img/inicap.jpg"
+        },
+        {
+            "id": "3",
+            "titulo": "Tecnicatura en informatica aplicada",
+            "institucion": "Instituto Nicolas Avellaneda",
+            "inicio": "2010",
+            "fin": "2011",
+            "imagen": "../assets/img/ina-logo.jpg"
+        },
+        {
+            "id": "4",
+            "titulo": "Tecnicatura Universitaria en Sonorización",
+            "institucion": "Facultad de Artes (UNT)",
+            "inicio": "2012",
+            "fin": "2015",
+            "imagen": "../assets/img/ifartesUnt.png"
+        },
+        {
+            "id": "5",
+            "titulo": "Diseño web responsivo",
+            "institucion": "freecodeCamp",
+            "inicio": "2020",
+            "fin": "2021",
+            "imagen": "../assets/img/logofreecodecamp.png"
+        },
+        {
+            "id": "6",
+            "titulo": "Programador Web",
+            "institucion": "Argentina Programa",
+            "inicio": "2021",
+            "fin": "2022",
+            "imagen": "../assets/img/APLogo-20-22.png"
+        },
+        {
+            "id": "7",
+            "titulo": "Programador en Python",
+            "institucion": "Codo a Codo",
+            "inicio": "2022",
+            "fin": "2023",
+            "imagen": "../assets/img/codo-a-codo.jpg"
+        },
+        {
+            "id": "8",
+            "titulo": "Inglés",
+            "institucion": "Centro Universitario de Idiomas",
+            "inicio": "2022",
+            "fin": "2023",
+            "imagen": "../assets/img/cui1.jpg"
+        },
+        {
+            "id": "9",
+            "titulo": "Habilidades blandas",
+            "institucion": "Accenture",
+            "inicio": "2022",
+            "fin": "2022",
+            "imagen": "../assets/img/accenturelogo1.png"
+        }
+    ],
+
+    "skills": [
+        {
+            "frontend": [
+                {
+                    "id": "1",
+                    "nombre": "HTML",
+                    "porcentaje": "70%"
+                },
+                {
+                    "id": "2",
+                    "nombre": "CSS",
+                    "porcentaje": "60%"
+                },
+                {
+                    "id": "3",
+                    "nombre": "Javascript",
+                    "porcentaje": "50%"
+                },
+                {
+                    "id": "4",
+                    "nombre": "Angular",
+                    "porcentaje": "50%"
+                },
+                {
+                    "id": "5",
+                    "nombre": "Bootstrap",
+                    "porcentaje": "70%"
+                }
+            ],
+
+            "backend": [
+                {
+                    "id": "6",
+                    "nombre": "Java",
+                    "porcentaje": "45%"
+                },
+                {
+                    "id": "7",
+                    "nombre": "Python",
+                    "porcentaje": "45%"
+                },
+                {
+                    "id": "8",
+                    "nombre": "MySQL",
+                    "porcentaje": "55%"
+                }
+            ]
+        }    
+    ],
+
+    "practicas": [
+        {
+            "id": "1",
+            "titulo": "Pagina Tributo",
+            "descripcion": "Práctica de freeCodeCamp desarrollando una pagina tributo utilizando HTML y CSS.",
+            "link": "",
+            "imagen": "../assets/img/_codepen.io3.png"
+        },
+        {
+            "id": "2",
+            "titulo": "Formulario",
+            "descripcion": "Práctica de freeCodeCamp elaborando un formulario web utilizando HTML y CSS.",
+            "link": "",
+            "imagen": "../assets/img/codepen.io2.png"
+        },
+        {
+            "id": "3",
+            "titulo": "Landing Page",
+            "descripcion": "Practica freeCodeCamp creando una Landing page con HTML y CSS.",
+            "link": "",
+            "imagen": "../assets/img/codepen.io.png"
+        },
+        {
+            "id": "4",
+            "titulo": "Portfolio Web",
+            "descripcion": "Proyecto de desarrollo de un portfolio web, utilizando herramientas de frontend, como HTML, CSS, Javascript y Angular, desarrollando el backend con Java y Springboot.",
+            "link": "",
+            "imagen": "../assets/img/portfolio-capture.png"
+        },
+        {
+            "id": "5",
+            "titulo": "Aplicacion con Python",
+            "descripcion": "Desarrollo de una aplicacion de cajero automatico con Python",
+            "link": "",
+            "imagen": ""
+        }
+    ]
+}

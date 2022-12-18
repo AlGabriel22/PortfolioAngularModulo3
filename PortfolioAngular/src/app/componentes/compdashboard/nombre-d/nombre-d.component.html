@@ -1,0 +1,32 @@
+<div class="container-fluid d-flex bg-dark bg-gradient shadow">
+    <div class="row d-flex justify-content-center ps-5 ms-5">
+        <div class="d-flex col-6 col-sm-12 justify-content-center text-light ms-1 mb-0 pb-0 pt-2 fs-4">
+            <h1 class="mb-0 d-flex justify-content-center fw-semibold fs-3" id="nombre">Alvaro Gabriel Mamani
+            </h1>
+        </div>
+        <div class="d-flex justify-content-center text-warning mt-0 pb-2 pt-0 fs-5">
+            <p id="perfil"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-code-slash mt-0 pt-0 mx-0" viewBox="0 0 20 20">
+                    <path
+                        d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+                </svg>Full Stack Developer Jr.</p>
+        </div>
+    </div>
+    <!--boton de edicion nombre-->
+    <div class="grid gap-2 justify-content-end my-3" id="btn-edit">
+        <button
+            class="btn btn-warning me-md-2 rounded-circle bg-transparent border border-2 border-warning bg-gradient mb-2"
+            type="button" data-bs-toggle="modal" data-bs-target="#edicionNombre"><span
+                class="material-symbols-outlined py-1 text-warning" style="font-size: 1rem;">
+                edit
+            </span></button>
+        <button
+            class="btn btn-warning me-md-2 rounded-circle bg-transparent border border-2 border-warning bg-gradient mb-2"
+            type="button" data-bs-toggle="modal" data-bs-target="#borrarNombre"><span
+                class="material-symbols-outlined py-1 text-warning" style="font-size: 1rem;">
+                Close
+            </span></button>
+    </div>
+</div>
+<app-nombre-modal></app-nombre-modal>
+<app-borrar-nombre-modal></app-borrar-nombre-modal>

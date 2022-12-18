@@ -1,0 +1,15 @@
+@media (max-width: 575px) {
+    #imagen {
+        max-width: 30%;
+        position: absolute;
+        left: 20%;
+    }
+}
+
+@media (min-width: 1280px) {
+    #imagen {
+        max-width: 40%;
+        position: absolute;
+        left: 10%;
+    }
+}

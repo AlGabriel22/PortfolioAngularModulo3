@@ -1,0 +1,37 @@
+<div class="modal fade" id="agregarExperiencia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+                <h5 class="modal-title text-light" id="staticBackdropLabel">Agregar Nuevo Campo</h5>
+                <button type="button" class="btn-close bg-warning" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- formulario -->
+            <div class="input-group">
+                <span class="input-group-text">Nombre de la empresa</span>
+                <input type="text" aria-label="Nombre" class="form-control bg-dark text-light"
+                    placeholder="Nombre de la empresa">
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text">Periodo</span>
+                <input type="text" aria-label="Año" class="form-control bg-dark text-light" placeholder="1999-2001">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">Descripción
+                </span>
+                <input type="text" aria-label="Descripcion" class="form-control bg-dark text-light"
+                    placeholder="Descripción">
+            </div>
+            <div class="my-3">
+                <label for="formFile" class="form-label text-light">Agrega un logo (opcional)</label>
+                <input class="form-control bg-dark text-light" type="file" id="formFile">
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-warning">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>

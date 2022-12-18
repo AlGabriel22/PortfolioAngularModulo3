@@ -1,0 +1,10 @@
+@media (max-width: 375px) {
+    #nombre {
+        font-size: 1.5rem;
+    }
+
+    #perfil {
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+}

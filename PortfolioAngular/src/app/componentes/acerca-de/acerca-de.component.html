@@ -1,0 +1,78 @@
+<section id="acerca-de" class="about mt-5">
+    <div class="container text-white py-4 mask shadow rounded-2 bg-gradient"
+        style="background-color: rgba(0, 0, 0, 0.8)">
+        
+        <div class="titulo pt-2 ps-3 pb-4">
+            <h2 class="fw-bold text-warning border-bottom border-warning">Acerca de mi</h2>
+            <!--Botones de edicion-->
+            <div class="d-grid gap-2 d-flex justify-content-end pt-2" id="btn-edit">
+                <button
+                    class="btn btn-warning me-md-2 rounded-circle bg-transparent border border-2 border-warning bg-gradient"
+                    type="button" data-bs-toggle="modal" data-bs-target="#edicionAcercaDe"><span
+                        class="material-symbols-outlined text-warning py-1" style="font-size: 1rem;">
+                        edit
+                    </span></button>
+                <button
+                    class="btn btn-warning rounded-circle bg-transparent border border-2 border-warning bg-gradient"
+                    type="button" data-bs-toggle="modal" data-bs-target="#borrarAcercaDe"><span
+                        class="material-symbols-outlined text-warning py-1" style="font-size: 1rem;">
+                        close
+                    </span></button>
+            </div> 
+
+            <p class="p-4 text-center fs-5">{{miPortfolio.acerca_de_mi}}</p>
+        </div>
+        
+                
+                <!---<ul class="list-unstyled ps-5">
+                    
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                        </svg><strong class="text-warning">Nacimiento:</strong> {{miPortfolio.fecha_nacimiento}}</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                        </svg><strong class="text-warning">Edad:</strong> {{miPortfolio.edad}} años</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                        </svg><strong class="text-warning">Ciudad:</strong> {{miPortfolio.ciudad}}</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                        </svg><strong class="text-warning">País:</strong> {{miPortfolio.pais}}</li>
+                </ul> -->
+           
+            <!--<div class="col-6">
+                <ul class="list-unstyled ps-5">
+
+                    <p>Otras actividades:</p>
+
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                        </svg>Peluqueria</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                        </svg>Carpinteria</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                        </svg>DJ</li>
+                </ul>
+            </div>-->
+        
+       
+    </div>
+    <app-acerca-de-modal></app-acerca-de-modal>
+    <app-borrar-acercade-modal></app-borrar-acercade-modal>
+</section>

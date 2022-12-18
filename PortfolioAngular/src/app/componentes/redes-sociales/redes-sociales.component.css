@@ -1,0 +1,10 @@
+/* estilos de iconos sociales*/
+
+.icon-style {
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+svg:hover {
+    fill: #ffc107;
+}
