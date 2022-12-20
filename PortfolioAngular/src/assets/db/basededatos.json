@@ -9,7 +9,6 @@
     "imagen_background_header": "../assets/img/vecteezy.jpg",
     "imagen_perfil": "../assets/img/imgprfl-200x200.jpg",
     "acerca_de_mi": "Soy estudiante de programación, en busca de mi primera experiencia laboral en el sector IT, capacitado como desarrollador web full stack en el programa Argentina Programa.",
-    
     "experiencia": [
         {
             "id": "1",
@@ -118,57 +117,61 @@
             "imagen": "../assets/img/accenturelogo1.png"
         }
     ],
-
     "skills": [
         {
-            "frontend": [
-                {
-                    "id": "1",
-                    "nombre": "HTML",
-                    "porcentaje": "70%"
-                },
-                {
-                    "id": "2",
-                    "nombre": "CSS",
-                    "porcentaje": "60%"
-                },
-                {
-                    "id": "3",
-                    "nombre": "Javascript",
-                    "porcentaje": "50%"
-                },
-                {
-                    "id": "4",
-                    "nombre": "Angular",
-                    "porcentaje": "50%"
-                },
-                {
-                    "id": "5",
-                    "nombre": "Bootstrap",
-                    "porcentaje": "70%"
-                }
-            ],
+            "id": "1",
+            "nombre": "HTML",
+            "porcentaje": "70%"
+        },
+        {
+            "id": "2",
+            "nombre": "CSS",
+            "porcentaje": "60%"
+        },
+        {
+            "id": "3",
+            "nombre": "Javascript",
+            "porcentaje": "50%"
+        },
+        {
+            "id": "4",
+            "nombre": "Angular",
+            "porcentaje": "50%"
+        },
+        {
+            "id": "5",
+            "nombre": "Bootstrap",
+            "porcentaje": "70%"
+        },
+        {
+            "id": "6",
+            "nombre": "Java",
+            "porcentaje": "45%"
+        },
+        {
+            "id": "7",
+            "nombre": "SpringBoot",
+            "porcentaje": "40%"
+        },
+        
+        {
+            "id": "8",
+            "nombre": "MySQL",
+            "porcentaje": "55%"
+        },
 
-            "backend": [
-                {
-                    "id": "6",
-                    "nombre": "Java",
-                    "porcentaje": "45%"
-                },
-                {
-                    "id": "7",
-                    "nombre": "Python",
-                    "porcentaje": "45%"
-                },
-                {
-                    "id": "8",
-                    "nombre": "MySQL",
-                    "porcentaje": "55%"
-                }
-            ]
-        }    
+        {
+            "id": "9",
+            "nombre": "Git-GitHub",
+            "porcentaje": "60%"
+        },
+
+        {
+            "id": "10",
+            "nombre": "Python",
+            "porcentaje": "55%"
+        }
     ],
-
     "practicas": [
         {
             "id": "1",

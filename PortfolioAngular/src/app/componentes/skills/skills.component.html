@@ -13,15 +13,233 @@
                             d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
                     </svg></button>
             </div>
-            <h2 class="fw-bold border-bottom">Skills</h2>
+            <h2 class="fw-bold border-bottom border-warning">Skills</h2>
         </div>
-        <div class="row">
-            <div class="col-6 justify-content-start shadow-sm">
-                <div class="text-center">
-                    <h4 class="shadow-sm text-warning">Frontend</h4>
+
+        <div class="container">
+            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                <div class="col-3" *ngFor="let skills of skilllist">
+
+                    <div class="p-3 shadow bg-dark rounded">
+                        <!--boton de edicion educacion-->
+                        <div class="d-grid gap-2 d-flex justify-content-end">
+
+                            <button
+                                class="btn btn-warning rounded-circle bg-transparent border border-2 border-warning bg-gradient"
+                                type="button" data-bs-toggle="modal" data-bs-target="#borrarskill"><span
+                                    class="material-symbols-outlined text-warning py-1" style="font-size: 1rem;">
+                                    close
+                                </span></button>
+                        </div>
+                        <div class="m-2 pt-2 fw-bold">{{skills.nombre}}</div>
+                        <div class="progress ms-5">
+                            <div class="progress-bar progress-bar-striped bg-success bg-gradient border border-1 border-warning"
+                                role="progressbar" aria-label="Example with label" style="width: 70%;"
+                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">{{skills.porcentaje}}</div>
+                        </div>
+                    </div>
+                </div>
+             <!--   <div class="col">
+
+                    <div class="p-3 shadow bg-dark rounded">
+                       
+                        <div class="d-grid gap-2 d-flex justify-content-end">
+
+                            <button
+                                class="btn btn-warning rounded-circle bg-transparent border border-2 border-warning bg-gradient"
+                                type="button" data-bs-toggle="modal" data-bs-target="#borrarEducacion"><span
+                                    class="material-symbols-outlined text-warning py-1" style="font-size: 1rem;">
+                                    close
+                                </span></button>
+                        </div>
+                        <div class="m-2 pt-2 fw-bold">CSS</div>
+                        <div class="progress ms-5">
+                            <div class="progress-bar bg-success bg-gradient border border-1 border-warning"
+                                role="progressbar" aria-label="Example with label" style="width: 55%;"
+                                aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="p-3 shadow bg-dark rounded">
+                        
+                        <div class="d-grid gap-2 d-flex justify-content-end">
+
+                            <button
+                                class="btn btn-warning rounded-circle bg-transparent border border-2 border-warning bg-gradient"
+                                type="button" data-bs-toggle="modal" data-bs-target="#borrarEducacion"><span
+                                    class="material-symbols-outlined text-warning py-1" style="font-size: 1rem;">
+                                    close
+                                </span></button>
+                        </div>
+                        <div class="m-2 pt-2 fw-bold">JavaScript</div>
+                        <div class="progress ms-5">
+                            <div class="progress-bar bg-success bg-gradient border border-1 border-warning"
+                                role="progressbar" aria-label="Example with label" style="width: 40%;"
+                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="p-3 shadow bg-dark rounded">
+                        
+                        <div class="d-grid gap-2 d-flex justify-content-end">
+
+                            <button
+                                class="btn btn-warning rounded-circle bg-transparent border border-2 border-warning bg-gradient"
+                                type="button" data-bs-toggle="modal" data-bs-target="#borrarEducacion"><span
+                                    class="material-symbols-outlined text-warning py-1" style="font-size: 1rem;">
+                                    close
+                                </span></button>
+                        </div>
+                        <div class="m-2 pt-2 fw-bold">Angular</div>
+                        <div class="progress ms-5">
+                            <div class="progress-bar bg-success bg-gradient border border-1 border-warning"
+                                role="progressbar" aria-label="Example with label" style="width: 45%;"
+                                aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="p-3 shadow bg-dark rounded">
+                        
+                        <div class="d-grid gap-2 d-flex justify-content-end">
+
+                            <button
+                                class="btn btn-warning rounded-circle bg-transparent border border-2 border-warning bg-gradient"
+                                type="button" data-bs-toggle="modal" data-bs-target="#borrarEducacion"><span
+                                    class="material-symbols-outlined text-warning py-1" style="font-size: 1rem;">
+                                    close
+                                </span></button>
+                        </div>
+                        <div class="m-2 pt-2 fw-bold">Bootstrap</div>
+                        <div class="progress ms-5">
+                            <div class="progress-bar bg-success bg-gradient border border-1 border-warning"
+                                role="progressbar" aria-label="Example with label" style="width: 60%;"
+                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="p-3 shadow bg-dark rounded">
+                        
+                        <div class="d-grid gap-2 d-flex justify-content-end">
+
+                            <button
+                                class="btn btn-warning rounded-circle bg-transparent border border-2 border-warning bg-gradient"
+                                type="button" data-bs-toggle="modal" data-bs-target="#borrarEducacion"><span
+                                    class="material-symbols-outlined text-warning py-1" style="font-size: 1rem;">
+                                    close
+                                </span></button>
+                        </div>
+                        <div class="m-2 pt-2 fw-bold">Java</div>
+                        <div class="progress ms-5">
+                            <div class="progress-bar bg-success bg-gradient border border-1 border-warning"
+                                role="progressbar" aria-label="Example with label" style="width: 60%;"
+                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="p-3 shadow bg-dark rounded">
+                        
+                        <div class="d-grid gap-2 d-flex justify-content-end">
+
+                            <button
+                                class="btn btn-warning rounded-circle bg-transparent border border-2 border-warning bg-gradient"
+                                type="button" data-bs-toggle="modal" data-bs-target="#borrarEducacion"><span
+                                    class="material-symbols-outlined text-warning py-1" style="font-size: 1rem;">
+                                    close
+                                </span></button>
+                        </div>
+                        <div class="m-2 pt-2 fw-bold">Springboot</div>
+                        <div class="progress ms-5">
+                            <div class="progress-bar bg-success bg-gradient border border-1 border-warning"
+                                role="progressbar" aria-label="Example with label" style="width: 45%;"
+                                aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="p-3 shadow bg-dark rounded">
+                        
+                        <div class="d-grid gap-2 d-flex justify-content-end">
+
+                            <button
+                                class="btn btn-warning rounded-circle bg-transparent border border-2 border-warning bg-gradient"
+                                type="button" data-bs-toggle="modal" data-bs-target="#borrarEducacion"><span
+                                    class="material-symbols-outlined text-warning py-1" style="font-size: 1rem;">
+                                    close
+                                </span></button>
+                        </div>
+                        <div class="m-2 pt-2 fw-bold">MySQL</div>
+                        <div class="progress ms-5">
+                            <div class="progress-bar bg-success bg-gradient border border-1 border-warning"
+                                role="progressbar" aria-label="Example with label" style="width: 40%;"
+                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="p-3 shadow bg-dark rounded">
+                        >
+                        <div class="d-grid gap-2 d-flex justify-content-end">
+
+                            <button
+                                class="btn btn-warning rounded-circle bg-transparent border border-2 border-warning bg-gradient"
+                                type="button" data-bs-toggle="modal" data-bs-target="#borrarSkill"><span
+                                    class="material-symbols-outlined text-warning py-1" style="font-size: 1rem;">
+                                    close
+                                </span></button>
+                        </div>
+                        <div class="m-2 pt-2 fw-bold">Git-GitHub</div>
+                        <div class="progress ms-5">
+                            <div class="progress-bar bg-success bg-gradient border border-1 border-warning"
+                                role="progressbar" aria-label="Example with label" style="width: 55%;"
+                                aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="m-2 fw-bold">HTML</div>
+                <div class="col">
+
+                    <div class="p-3 shadow bg-dark rounded">
+                        
+                        <div class="d-grid gap-2 d-flex justify-content-end">
+
+                            <button
+                                class="btn btn-warning rounded-circle bg-transparent border border-2 border-warning bg-gradient"
+                                type="button" data-bs-toggle="modal" data-bs-target="#borrarSkill"><span
+                                    class="material-symbols-outlined text-warning py-1" style="font-size: 1rem;">
+                                    close
+                                </span></button>
+                        </div>
+                        <div class="m-2 pt-2 fw-bold">Python</div>
+                        <div class="progress ms-5">
+                            <div class="progress-bar bg-success bg-gradient border border-1 border-warning"
+                                role="progressbar" aria-label="Example with label" style="width: 55%;"
+                                aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+                        </div>
+                    </div>
+                </div>--->
+            </div>
+        </div>
+
+        <!---<div class="col justify-content-start shadow-sm">
+            <div class="text-center">
+                <h4 class="shadow-sm text-warning">Frontend</h4>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 m-2 fw-bold">HTML</div>
                 <div class="progress ms-5">
                     <div class="progress-bar progress-bar-striped bg-success bg-gradient border border-1 border-warning"
                         role="progressbar" aria-label="Example with label" style="width: 70%;" aria-valuenow="70"
@@ -29,60 +247,61 @@
                 </div>
 
 
-                <div class="m-2 pt-2 fw-bold">CSS</div>
+                <div class="col-4 m-2 pt-2 fw-bold">CSS</div>
                 <div class="progress ms-5">
                     <div class="progress-bar bg-success bg-gradient border border-1 border-warning" role="progressbar"
                         aria-label="Example with label" style="width: 55%;" aria-valuenow="55" aria-valuemin="0"
                         aria-valuemax="100">55%</div>
                 </div>
 
-                <div class="m-2 pt-2 fw-bold">JavaScript</div>
+                <div class="col-4 m-2 pt-2 fw-bold">JavaScript</div>
                 <div class="progress ms-5">
                     <div class="progress-bar bg-success bg-gradient border border-1 border-warning" role="progressbar"
                         aria-label="Example with label" style="width: 40%;" aria-valuenow="40" aria-valuemin="0"
                         aria-valuemax="100">40%</div>
                 </div>
 
-                <div class="m-2 pt-2 fw-bold">Angular</div>
+
+                <div class="col-4 m-2 pt-2 fw-bold">Angular</div>
                 <div class="progress ms-5">
                     <div class="progress-bar bg-success bg-gradient border border-1 border-warning" role="progressbar"
                         aria-label="Example with label" style="width: 45%;" aria-valuenow="45" aria-valuemin="0"
                         aria-valuemax="100">45%</div>
                 </div>
 
-                <div class="m-2 pt-2 fw-bold">Bootstrap</div>
+                <div class="col-4 m-2 pt-2 fw-bold">Bootstrap</div>
                 <div class="progress ms-5">
                     <div class="progress-bar bg-success bg-gradient border border-1 border-warning" role="progressbar"
                         aria-label="Example with label" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
                         aria-valuemax="100">60%</div>
-                </div>
-            </div>
-
-            <div class="col-6 justify-content-center">
-                <div class="text-center">
-                    <h4 class="shadow-sm text-warning">Backend</h4>
-                </div>
-                <div class="m-2 fw-bold">Java</div>
-                <div class="progress ms-5">
-                    <div class="progress-bar bg-success bg-gradient border border-1 border-warning" role="progressbar"
-                        aria-label="Example with label" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100">60%</div>
-                </div>
-
-                <div class="m-2 pt-2 fw-bold">Springboot</div>
-                <div class="progress ms-5">
-                    <div class="progress-bar bg-success bg-gradient border border-1 border-warning" role="progressbar"
-                        aria-label="Example with label" style="width: 45%;" aria-valuenow="45" aria-valuemin="0"
-                        aria-valuemax="100">45%</div>
-                </div>
-
-                <div class="m-2 pt-2 fw-bold">MySQL</div>
-                <div class="progress ms-5">
-                    <div class="progress-bar bg-success bg-gradient border border-1 border-warning" role="progressbar"
-                        aria-label="Example with label" style="width: 40%;" aria-valuenow="40" aria-valuemin="0"
-                        aria-valuemax="100">40%</div>
                 </div>
             </div>
         </div>
+
+        <div class="col-6 justify-content-center">
+            <div class="text-center">
+                <h4 class="shadow-sm text-warning">Backend</h4>
+            </div>
+            <div class="m-2 fw-bold">Java</div>
+            <div class="progress ms-5">
+                <div class="progress-bar bg-success bg-gradient border border-1 border-warning" role="progressbar"
+                    aria-label="Example with label" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
+                    aria-valuemax="100">60%</div>
+            </div>
+
+            <div class="m-2 pt-2 fw-bold">Springboot</div>
+            <div class="progress ms-5">
+                <div class="progress-bar bg-success bg-gradient border border-1 border-warning" role="progressbar"
+                    aria-label="Example with label" style="width: 45%;" aria-valuenow="45" aria-valuemin="0"
+                    aria-valuemax="100">45%</div>
+            </div>
+
+            <div class="m-2 pt-2 fw-bold">MySQL</div>
+            <div class="progress ms-5">
+                <div class="progress-bar bg-success bg-gradient border border-1 border-warning" role="progressbar"
+                    aria-label="Example with label" style="width: 40%;" aria-valuenow="40" aria-valuemin="0"
+                    aria-valuemax="100">40%</div>
+            </div>
+        </div>-->
     </div>
 </section>
